@@ -23,19 +23,15 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      {/* <div className="app__header-badge">
+      <div className="app__header-badge">
         <div className="badge-cmp app__flex">
           <div>
-            <p className="p-text">Hello, I am</p>
+            <p className="p-text">Hello, my name is</p>
             <h1 className="head-text">Brandon</h1>
           </div>
         </div>
 
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
-        </div>
-      </div> */}
+      </div>
     </motion.div>
 
     <motion.div
@@ -58,6 +54,14 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
+    <div className="app__header-badge">
+        <div className="tag-cmp app__flex">
+          <div>
+            <p className="p-text">I am a</p>
+            <h2>Full-Stack Developer</h2>
+          </div>
+        </div>
+      </div>
       {/* {[images.flutter, images.redux, images.sass].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
