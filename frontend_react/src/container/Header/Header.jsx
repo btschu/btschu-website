@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
 import './Header.scss';
+import circleImg from '../../assets/circle.svg'
+import profileImg from '../../assets/profile.png'
 
 const scaleVariants = {
   whileInView: {
@@ -39,11 +40,11 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.profile} alt="profile_bg" />
+      <img src={profileImg} alt="profile_bg" />
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        src={images.circle}
+        src={circleImg}
         alt="profile_circle"
         className="overlay_circle"
       />
