@@ -14,10 +14,10 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'portfolio', 'skills', 'testimonials', 'contact'].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
+        {['home', 'about', 'portfolio', 'skills', 'testimonials', 'contact'].map((item, index) => (
+          <li className="app__flex p-text" key={`link-${item}`} tabIndex={index + 1}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`} aria-label={item}>{item}</a>
           </li>
         ))}
       </ul>

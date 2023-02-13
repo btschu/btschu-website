@@ -110,50 +110,47 @@
 
 .app__social {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  bottom: 0;
+  left: 0;
   flex-direction: column;
-
   padding: 1rem;
+  position: fixed;
+  z-index: 2;
 
-  div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  button {
+    border-radius: 8px;
+    padding: 5px 8px;
     background-color: var(--white-color);
     margin: 0.25rem 0;
     border: 1px solid var(--lightGray-color);
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: var(--gray-color);
+      cursor: pointer;
+    }
 
     svg {
       width: 15px;
       height: 15px;
       color: var(--gray-color);
+      margin-right: 5px;
+      margin-bottom: -3px;
     }
 
     &:hover {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
+      
+      a {
+        color: var(--white-color);
+      }
 
       svg {
         color: var(--white-color);
-      }
-    }
-
-    @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
-
-      margin: 0.5rem 0;
-
-      svg {
-        width: 30px;
-        height: 30px;
       }
     }
   }
@@ -164,8 +161,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   padding: 1rem;
+  // position: fixed;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 
   .app__navigation-dot {
     width: 10px;
@@ -174,7 +175,7 @@
     background-color: #cbcbcb;
     margin: 0.5rem;
 
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out; 
 
     &:hover {
       background-color: var(--secondary-color);
@@ -187,13 +188,23 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .app__navigation,
+@media screen and (max-width: 700px) {
   .app__social {
-    display: none;
+    width: 100%;
+    flex-direction: row;
+    
+    button{
+      // border-radius: 50%;
+      // width: 30px;
+      // height: 30px;
+      // justify-content: center;
+      // align-items: center;
+      // padding: 0 0 1px 4.5px;
+      margin: 0 auto;
+      
+      // span {
+      //   display: none;
+      // }
   }
-
-  .copyright {
-    padding: 2rem;
-  }
+}
 }
