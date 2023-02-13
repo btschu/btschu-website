@@ -9,7 +9,7 @@ import './Work.scss';
 const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
-  const [activeFilter, setActiveFilter] = useState('All');
+  // const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
@@ -21,26 +21,26 @@ const Work = () => {
     });
   }, []);
 
-  const handleWorkFilter = (item) => {
-    setActiveFilter(item);
-    setAnimateCard([{ y: 100, opacity: 0 }]);
+  // const handleWorkFilter = (item) => {
+  //   setActiveFilter(item);
+  //   setAnimateCard([{ y: 100, opacity: 0 }]);
 
-    setTimeout(() => {
-      setAnimateCard([{ y: 0, opacity: 1 }]);
+  //   setTimeout(() => {
+  //     setAnimateCard([{ y: 0, opacity: 1 }]);
 
-      if (item === 'All') {
-        setFilterWork(works);
-      } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
-      }
-    }, 500);
-  };
+  //     if (item === 'All') {
+  //       setFilterWork(works);
+  //     } else {
+  //       setFilterWork(works.filter((work) => work.tags.includes(item)));
+  //     }
+  //   }, 500);
+  // };
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text">My <span>Portfolio</span></h2>
 
-      <div className="app__work-filter">
+      {/* <div className="app__work-filter">
         {['Front-End', 'Back-End', 'Full-Stack', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
@@ -50,7 +50,7 @@ const Work = () => {
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
 
       <motion.div
         animate={animateCard}
@@ -97,9 +97,9 @@ const Work = () => {
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
 
-              <div className="app__work-tag app__flex">
+              {/* <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
