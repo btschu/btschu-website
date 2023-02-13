@@ -194,17 +194,24 @@
     flex-direction: row;
     
     button{
-      // border-radius: 50%;
-      // width: 30px;
-      // height: 30px;
-      // justify-content: center;
-      // align-items: center;
-      // padding: 0 0 1px 4.5px;
       margin: 0 auto;
-      
-      // span {
-      //   display: none;
-      // }
   }
 }
 }
+
+  @media screen and (max-width: 375px) {
+    .app__social button{
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 1px 4.5px;
+      
+      span {
+        display: none;
+      }
+  }
+}
+
+
