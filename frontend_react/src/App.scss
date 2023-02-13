@@ -184,6 +184,9 @@
       width: 20px;
       height: 20px;
     }
+    @media screen and (max-width: 550px) {
+      display: none;
+    }
   }
 }
 
