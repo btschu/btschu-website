@@ -9,7 +9,7 @@ import './Work.scss';
 const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
-  // const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
@@ -21,27 +21,28 @@ const Work = () => {
     });
   }, []);
 
-  // const handleWorkFilter = (item) => {
-  //   setActiveFilter(item);
-  //   setAnimateCard([{ y: 100, opacity: 0 }]);
+  const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
 
-  //   setTimeout(() => {
-  //     setAnimateCard([{ y: 0, opacity: 1 }]);
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
 
-  //     if (item === 'All') {
-  //       setFilterWork(works);
-  //     } else {
-  //       setFilterWork(works.filter((work) => work.tags.includes(item)));
-  //     }
-  //   }, 500);
-  // };
+      if (item === 'All') {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
 
   return (
     <>
       <h2 className="head-text">My <span>Portfolio</span></h2>
 
-      {/* <div className="app__work-filter">
-        {['Front-End', 'Back-End', 'Full-Stack', 'React JS', 'All'].map((item, index) => (
+      <div className="app__work-filter">
+        {/* {['Front-End', 'Back-End', 'Full-Stack', 'React JS', 'All'].map((item, index) => ( */}
+        {['All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -50,7 +51,7 @@ const Work = () => {
             {item}
           </div>
         ))}
-      </div> */}
+      </div>
 
       <motion.div
         animate={animateCard}
