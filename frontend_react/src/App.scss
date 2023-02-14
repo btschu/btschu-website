@@ -190,16 +190,16 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .app__social {
-    width: 100%;
-    flex-direction: row;
+// @media screen and (max-width: 800px) {
+//   .app__social {
+//     width: 100%;
+//     flex-direction: row;
     
-    button{
-      margin: 0 auto;
-  }
-}
-}
+//     button{
+//       margin: 0 auto;
+//   }
+// }
+// }
 
 @media screen and (max-width: 375px) {
   .app__social button{
