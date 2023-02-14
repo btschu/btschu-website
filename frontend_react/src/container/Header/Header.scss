@@ -72,34 +72,29 @@
 }
 
 .app__header-img {
-  // flex: 1;
-  // height: 100%;
-  // object-fit: contain;
+  flex: 1;
+  height: 100%;
+  object-fit: contain;
   display: flex;
-  // justify-content: center;
+  justify-content: center;
   align-items: flex-end;
-  // position: relative;
-  // padding: 1rem;
+  position: relative;
 
   img {
     height: 75vh;
     z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    // top: 1;
+    // padding: 0 10px 0 0;
   }
 
   .overlay_circle {
     position: absolute;
     left: 0;
     right: 0;
-    top: 1;
+    bottom: 0;
     z-index: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
-
+    // padding: 10px;
   }
 
   @media screen and (min-width: 1200px) {
