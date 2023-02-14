@@ -201,18 +201,19 @@
 }
 
 @media screen and (max-width: 550px) {
-  .app__social button{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 1px 4.5px;
+  // .app__social button{
+  //   border-radius: 50%;
+  //   width: 30px;
+  //   height: 30px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: 0 0 1px 4.5px;
     
-    span {
-      display: none;
+    .app__social span {
+      // display: none;
+      font-size: .55rem;
     }
   }
-}
+
 
 
