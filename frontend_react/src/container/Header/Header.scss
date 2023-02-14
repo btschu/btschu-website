@@ -2,8 +2,6 @@
   position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;
-  // background-position: center;
-  // background-repeat: repeat;
 
   // disable the default padding styles
   .app__wrapper {
@@ -16,10 +14,8 @@
 }
 
 .app__header {
-  // flex: 1;
   width: 100vw;
   height: 100%;
-  // flex-direction: row;
 
   padding: 6rem 2rem 0rem;
 
@@ -27,13 +23,13 @@
     padding-top: 8rem;
   }
 
-  // @media screen and (max-width: 1200px) {
-  //   flex-direction: column;
-  // }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 
-  // @media screen and (max-width: 450px) {
-  //   padding: 6rem 1rem 0rem;
-  // }
+  @media screen and (max-width: 450px) {
+    padding: 6rem 1rem 0rem;
+  }
 }
 
 // .app__header-info {
