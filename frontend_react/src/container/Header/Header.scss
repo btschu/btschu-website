@@ -105,11 +105,11 @@
     height: 75vh;
     object-fit: contain;
     z-index: 1;
-    overflow: hidden;
   }
 
   .overlay_circle {
     position: absolute;
+    object-fit: contain;
     left: 0;
     right: 0;
     bottom: 0;
