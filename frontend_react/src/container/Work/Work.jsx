@@ -67,7 +67,7 @@ const Work = () => {
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
-                whileTap={{ opacity: [0, 1] }}
+                // whileTap={{ opacity: 1 }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
