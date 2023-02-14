@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Typewriter from "typewriter-effect"
 
 import { AppWrap } from '../../wrapper';
 import './Header.scss';
@@ -56,10 +57,18 @@ const Header = () => (
       className="app__header-circles"
     >
     <div className="app__header-badge">
-        <div className="tag-cmp app__flex">
+        <div className="tag-cmp">
           <div>
             <p className="p-text">I am a</p>
-            <h2>Full-Stack Developer</h2>
+            <div className="typewriter">
+              <Typewriter className="typewriter"
+                options={{
+                  strings: ['Full-Stack Developer', 'Freelancer', 'Educator', 'Husband', 'Father'],
+                  autoStart: true,
+                  loop: true,
+                }}
+                />
+            </div>
           </div>
         </div>
       </div>
