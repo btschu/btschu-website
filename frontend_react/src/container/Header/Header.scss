@@ -6,10 +6,6 @@
   // disable the default padding styles
   .app__wrapper {
     padding: 0;
-
-    .copyright {
-      display: none;
-    }
   }
 }
 
@@ -18,7 +14,7 @@
   overflow-x: hidden;
   width: 100vw;
 
-  padding: 6rem 2rem 0rem;
+  padding: 4rem 2rem 0rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -29,46 +25,27 @@
   }
 
   @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 0rem;
+    padding: 4rem 1rem 0rem;
   }
 }
 
-.app__header-badge {
-  width: 100%;
+.app__header-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 40px;
+  flex-direction: row;
+  align-items: center;
 
-  .badge-cmp,
-  .tag-cmp {
-    padding: 1rem 2rem;
-    background: var(--white-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: 300px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
   }
+}
 
-  .badge-cmp {
-    margin-bottom:25rem;
-  }
+.app__header-info h3 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  text-align: center;
 
-  .tag-cmp {
-    margin-top: 18rem;
-  }
-
-  span {
-    font-size: 2rem;
-
-    @media screen and (min-width: 2000px) {
-      font-size: 5rem;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    display: none;
+  @media screen and (max-width: 900px) {
+    font-size: 2.5rem;
   }
 }
 
@@ -82,28 +59,21 @@
   position: relative;
 
   img {
-    height: 75vh;
+    height: 85vh;
     z-index: 1;
-    // padding: 0 10px 0 0;
-  }
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    transition: all .5s ease-in-out;
 
-  .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    // padding: 10px;
-  }
+    &:hover {
+      transform: scale(1.01);
+    }
 
-  @media screen and (min-width: 1200px) {
-    margin: 0;
-    padding: 0;
+    @media screen and (max-width: 1200px) {
+      height: 75vh;
+    }
+    @media screen and (max-width: 700px) {
+      height: 60vh;
+    }
   }
-}
-
-.typewriter {
-  font-size: 1rem;
 }

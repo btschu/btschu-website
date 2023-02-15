@@ -1,84 +1,29 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Typewriter from "typewriter-effect"
+import React from "react";
+import { motion } from "framer-motion";
 
-import { AppWrap } from '../../wrapper';
-import './Header.scss';
-import circleImg from '../../assets/circle.svg'
+import { AppWrap } from "../../wrapper";
+import "./Header.scss";
 import profileImg from '../../assets/profile.png'
 
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: 'easeInOut',
-    },
-  },
-};
-
 const Header = () => (
-  <div className="app__header app__flex">
-    <motion.div
-      whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-      transition={{ duration: 0.5 }}
-      className="app__header-info"
-    >
-      <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
-          <div>
-            <p className="p-text">Hello, my name is</p>
-            <h1 className="head-text">Brandon</h1>
-          </div>
-        </div>
-
-      </div>
-    </motion.div>
-
+  <div className="app__header">
     <motion.div
       whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__header-img"
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      className="app__header-info"
     >
-      <img src={profileImg} alt="profile_bg" />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
-        src={circleImg}
-        alt="profile_circle"
-        className="overlay_circle"
-      />
-    </motion.div>
-
-    <motion.div
-      variants={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
-    >
-    <div className="app__header-badge">
-        <div className="tag-cmp">
-          <div>
-            <p className="p-text">I am a</p>
-            <div className="typewriter">
-              <Typewriter className="typewriter"
-                options={{
-                  strings: ['Full-Stack Developer', 'Freelancer', 'Educator', 'Husband', 'Father'],
-                  autoStart: true,
-                  loop: true,
-                }}
-                />
-            </div>
-          </div>
+      <div className="app__header-container">
+        <div className="app__header-info">
+          <h3 className="bold-text">Welcome!</h3>
+          <h1 className="head-text">
+          As a <span>full-stack developer</span>, I have the ability to create end-to-end solutions that seamlessly integrate various layers of technology and functionality          </h1>
+        </div>
+        <div className="app__header-img">
+          <img src={profileImg} alt="profile_bg" />
         </div>
       </div>
-      {/* {[images.flutter, images.redux, images.sass].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
-        </div>
-      ))} */}
     </motion.div>
   </div>
 );
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, "home");

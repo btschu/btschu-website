@@ -49,7 +49,6 @@
   .app__work-item {
     width: 350px;
     flex-direction: column;
-
     margin: 1rem;
     padding: auto;
     border-radius: 0.5rem;
@@ -139,6 +138,10 @@
   width: 100%;
   position: relative;
   flex-direction: column;
+
+  p {
+    text-align: center;
+  }
 
   h4 {
     margin-top: 1rem;

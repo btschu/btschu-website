@@ -1,7 +1,49 @@
 .app__about {
-  flex: 1;
-  width: 100%;
+  // flex: 1;
+  width: 90%;
   flex-direction: column;
+}
+
+.app__about-container {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    border-radius: 10px;
+    width: 38vw;
+    margin: 1.5rem 1.5rem 0 0;
+    float: left;
+    border: 1px solid #313bac;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: 0 0 10px #000;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    @media screen and (max-width: 800px) {
+      float: none;
+      width: 100%;
+      margin: 1rem 0 0 0;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+}
+
+p.app__about-text {
+  line-height: 1.4em;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: justify;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 .app__profiles {

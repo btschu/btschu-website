@@ -13,7 +13,7 @@
 
 .app__container {
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -28,11 +28,11 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 
-  @media screen and (max-width: 450px) {
-    padding: 4rem 1rem;
-  }
+  // @media screen and (max-width: 450px) {
+  //   padding: 1rem;
+  // }
 }
 
 .copyright {
@@ -55,7 +55,7 @@
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
-  text-transform: capitalize;
+  // text-transform: capitalize;
 
   span {
     color: var(--secondary-color);
@@ -64,21 +64,18 @@
   @media screen and (max-width: 2000px) {
     font-size: 2.5rem;
   }
-  
+ 
   @media screen and (max-width: 1200px) {
     font-size: 2rem;
   }
-  @media screen and (max-width: 1000px) {
-    font-size: 1.5rem;
-  }
 
   @media screen and (max-width: 450px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 .p-text {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   text-align: left;
   color: var(--gray-color);
   line-height: 1.5;
@@ -87,8 +84,8 @@
     font-size: 1.75rem;
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 1.25rem;
+  @media screen and (max-width: 1200px) {
+    font-size: .85rem;
   }
 }
 
