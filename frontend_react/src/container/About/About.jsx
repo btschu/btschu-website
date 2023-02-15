@@ -4,6 +4,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import aboutImg from '../../assets/about.jpeg'
 
+const About = () => {
   return (
     <>
       <h2 className="head-text">A Little <span>About</span> Me</h2>
