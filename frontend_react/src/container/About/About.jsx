@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import aboutImg from '../../assets/about.jpeg'
