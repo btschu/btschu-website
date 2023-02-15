@@ -1,21 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
-import { urlFor, client } from '../../client';
 import aboutImg from '../../assets/about.jpeg'
-
-const About = () => {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-
-    client.fetch(query).then((data) => {
-      setAbouts(data);
-    });
-  }, []);
 
   return (
     <>
