@@ -9,10 +9,12 @@ export default defineConfig({
 
   projectId: '0ngcnoqf',
   dataset: 'production',
-
+  
   plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
   },
 })
+
+
