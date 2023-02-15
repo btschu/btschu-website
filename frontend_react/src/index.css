@@ -17,10 +17,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     width: .7em;
 }
  
@@ -31,4 +31,4 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color);
   border-radius: 20px;
-}
+} */
