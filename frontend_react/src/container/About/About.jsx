@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">A Little <span>About</span> Me</h2>
+      <h2 className="head-text"><span>About</span> Me</h2>
       <div className="app__about-container">
         <div className="app__about-img">
             <img src={aboutImg} alt="profile_bg" />
