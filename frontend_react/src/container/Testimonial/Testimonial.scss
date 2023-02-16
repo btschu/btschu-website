@@ -9,7 +9,7 @@
   min-height: 320px;
   background-color: var(--white-color);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 15px;
@@ -92,8 +92,10 @@
     height: 50px;
     border-radius: 50%;
     background-color: var(--white-color);
+    align-items: center;
 
-    margin: 1rem 1rem 0 1rem;
+
+    margin: 0 1rem 1rem;
     transition: all 0.3s ease-in-out;
 
     svg {

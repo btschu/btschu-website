@@ -11,6 +11,7 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     const query = '*[_type == "works"]';
@@ -95,8 +96,9 @@ const Work = () => {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text" style={{ marginTop: 12, fontSize: 20, color: '#313bac'}}>{work.title}</h4>
-              <p className="p-text" style={{ fontSize: 13, marginTop: 10, color: '#313bac' }}><em>{work.technologies}</em></p>
-              <p className="p-text" style={{ fontSize: 15, marginTop: 10, marginBottom: 10 }}>{work.description}</p>
+              <p className="p-text" style={{ fontSize: 13, marginTop: 10, marginBottom: 10, color: '#313bac' }}><em>{work.technologies}</em></p>
+              {showMore ? work.description : work.description.substring(0, 120) + ' ...'}
+              <p className="p-text" style={{ fontSize: 15, marginTop: 10, marginBottom: 10, cursor: 'pointer'  }} onClick={() => setShowMore(!showMore) }>{showMore ? "Show Less" : "Show More"}</p>
 
               <div className="app__work-tag app__flex">
                 <p style={{ fontSize: 12 }}>{work.tags[0]}</p>
