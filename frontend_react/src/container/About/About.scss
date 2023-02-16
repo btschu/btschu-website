@@ -13,9 +13,9 @@
     width: 38vw;
     margin: 1.5rem 1.5rem 0 0;
     float: left;
-    // border: 1px solid #313bac;
-    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
     transition: all .5s ease-in-out;
 
     &:hover {
