@@ -94,11 +94,12 @@ const Work = () => {
             </div>
 
             <div className="app__work-content app__flex">
-              <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <h4 className="bold-text" style={{ marginTop: 5, fontSize: 20, color: '#313bac'}}>{work.title}</h4>
+              <p className="p-text" style={{ fontSize: 15, marginTop: 10 }}>{work.description}</p>
+              <p className="p-text" style={{ fontSize: 13, marginTop: 10, color: '#313bac' }}><em>{work.technologies}</em></p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p style={{ fontSize: 12 }}>{work.tags[0]}</p>
               </div>
             </div>
           </div>
