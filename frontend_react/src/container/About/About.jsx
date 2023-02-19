@@ -23,7 +23,7 @@ const About = () => {
       <div className="app__about-container">
         <div className="app__about-img">
             <img src={aboutImg} alt="profile_bg" />
-            <p className="bold-text app__about-text">I find great joy in building applications that work seamlessly from end-to-end. I enjoy the challenge of developing both the front-end user interface and the back-end server logic, and the opportunity to apply my skills across the entire technology stack. I constantly find myself learning new technologies and exploring ways to optimize performance and user experience. Overall, my passion for development fuels my drive to continuously improve and innovate in the field. Apart from coding, I love spending quality time with my family, playing the drums, golfing, and exploring new places through travel.</p>
+            <p className="p-text app__about-text">I find great joy in building applications that work seamlessly from end-to-end. I enjoy the challenge of developing both the front-end user interface and the back-end server logic, and the opportunity to apply my skills across the entire technology stack. I constantly find myself learning new technologies and exploring ways to optimize performance and user experience. Overall, my passion for development fuels my drive to continuously improve and innovate in the field. Apart from coding, I love spending quality time with my family, playing the drums, golfing, and exploring new places through travel.</p>
         </div>
       </div>
       <div className="app__profiles">

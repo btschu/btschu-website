@@ -35,14 +35,22 @@
 }
 
 p.app__about-text {
-  line-height: 1.4em;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  line-height: 2rem;
+  color: var(--black-color);
+  font-family: var(--font-base);
   text-align: justify;
+  margin: 2rem 0 0 0;
+  
 
-  @media screen and (max-width: 800px) {
-    font-size: 1.2rem;
-    text-align: center;
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: .85rem;
+    line-height: 1.3rem;
   }
 }
 

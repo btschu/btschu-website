@@ -37,7 +37,7 @@ const Work = () => {
       >
         {works.length && (
           <Carousel
-            className="app__work-item app__flex"
+            className="app__work-item"
             touch={true}
             interval={null}
             variant="dark"
@@ -49,18 +49,6 @@ const Work = () => {
               )
             }
           >
-          <div className="app__flex">
-            <div
-              className="app__work-btns app__flex"
-              style={{ cursor: "pointer" }}
-              onClick={() =>
-                handleClick(
-                  currentIndex === 0 ? works.length - 1 : currentIndex - 1
-                )
-              }
-            >
-              <HiChevronLeft />
-            </div>
             <div
               className="app__work-img app__flex"
             >
@@ -106,8 +94,20 @@ const Work = () => {
                 </a>
               </motion.div>
             </div>
+          <div className="app__flex">
             <div
-              className="app__work-btns app__flex"
+              className="app__work-btns"
+              style={{ cursor: "pointer" }}
+              onClick={() =>
+                handleClick(
+                  currentIndex === 0 ? works.length - 1 : currentIndex - 1
+                )
+              }
+            >
+              <HiChevronLeft />
+            </div>
+            <div
+              className="app__work-btns"
               style={{ cursor: "pointer" }}
               onClick={() =>
                 handleClick(
@@ -119,26 +119,26 @@ const Work = () => {
             </div>
           </div>
 
-            <div className="app__work-content app__flex">
+            <div className="app__work-content">
               <h4
                 className="bold-text"
-                style={{ marginTop: 12, color: "#313bac" }}
+                style={{  color: "#313bac" }}
               >
                 {works[currentIndex].title}
               </h4>
-              <p
+              <h5
                 className="p-text"
-                style={{ fontSize: 13, marginBottom: 5, color: "#313bac" }}
+                style={{ fontSize: 13, color: "#313bac" }}
               >
                 <em>{works[currentIndex].technologies}</em>
-              </p>
-              <p className="p-text" style={{ marginBottom: 20 }}>
+              </h5>
+              <p className="p-text">
                 {works[currentIndex].description}
               </p>
 
-              <div className="app__work-tag app__flex">
+              {/* <div className="app__work-tag app__flex">
                 <p style={{ fontSize: 12 }}>{works[currentIndex].tags}</p>
-              </div>
+              </div> */}
             </div>
           </Carousel>
         )}
