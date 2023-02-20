@@ -160,6 +160,8 @@
   .app__social {
     width: 100%;
     flex-direction: row;
+    background-color: var(--primary-color);
+    padding: .5rem;
     
     button{
       margin: 0 auto;
