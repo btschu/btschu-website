@@ -1,10 +1,8 @@
 .app__navbar {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -92,12 +90,10 @@
   height: 35px;
   border-radius: 50%;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-
 
   svg {
     width: 70%;
@@ -118,8 +114,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
-    // background: url('../../assets/bgWhite.png');
     background-color: var(--primary-color);
 
     svg {
