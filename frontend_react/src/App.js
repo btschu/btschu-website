@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { About, Footer, Header, Skills, Testimonial, Work } from './container';
-import { Navbar } from './components';
-import SocialMedia from './components/SocialMedia'
+import { About, Footer, Header, Skills, Testimonial, Work, Navbar, SocialMedia } from './components';
 
 import useLocalStorage from './hooks/useLocalStorage';
 
@@ -17,6 +15,7 @@ const App = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
   };
+
   return (
     <div className="app" data-theme={theme}>
       <Navbar theme={theme}/>

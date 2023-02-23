@@ -8,6 +8,7 @@ import './Navbar.scss';
 const Navbar = ({theme}) => {
   const [toggle, setToggle] = useState(false);
 
+  // console.log(theme);
   return (
     <nav className="app__navbar">
 

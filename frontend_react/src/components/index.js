@@ -1,9 +1,19 @@
-import NavigationDots from './NavigationDots';
-import SocialMedia from './SocialMedia';
+import About from './About/About';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Skills from './Skills/Skills';
+import Testimonial from './Testimonial/Testimonial';
+import Work from './Work/Work';
 import Navbar from './Navbar/Navbar';
+import SocialMedia from './SocialMedia';
 
 export {
-  NavigationDots,
-  SocialMedia,
+  About,
+  Footer,
+  Header,
+  Skills,
+  Testimonial,
+  Work,
   Navbar,
+  SocialMedia
 };
