@@ -107,14 +107,13 @@ svg {
   }
 
   div {
-    position: fixed;
+    position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
     z-index: 5;
-    padding: .5rem;
-    width: 100vw;
-    height: 100vh;
+    // padding: .5rem;
+    width: 275px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -130,24 +129,24 @@ svg {
 
     ul {
       list-style: none;
-      margin: 0 0 40px 0;
+      // margin: 0 0 40px 0;
       padding: 0;
       height: 100%;
       width: 100%;
 
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-end;
       flex-direction: column;
 
       li {
-        margin: 1.5rem;
+        margin: 1rem;
         
 
         a {
           color: var(--gray-color);
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           text-transform: uppercase;
           font-weight: bold;
           transition: all 0.3s ease-in-out;

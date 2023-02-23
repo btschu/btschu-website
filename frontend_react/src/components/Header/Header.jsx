@@ -9,7 +9,7 @@ import profileImgDark from '../../assets/profile-dark.png'
 const Header = ({theme}) => {
 
   return (
-    <div className="app__header">
+    <div className="app__header" id='home'>
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1.5, ease: "easeInOut" }}

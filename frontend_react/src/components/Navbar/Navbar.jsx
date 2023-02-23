@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+
 import logo from '../../assets/logo.png';
 import logoDark from '../../assets/logo-dark.png';
+
 import './Navbar.scss';
 
 const Navbar = ({theme}) => {
   const [toggle, setToggle] = useState(false);
 
-  // console.log(theme);
   return (
     <nav className="app__navbar">
 
@@ -36,6 +38,7 @@ const Navbar = ({theme}) => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggle(false)} />
+            
             <ul>
               {['home', 'about', 'portfolio', 'skills', 'testimonials', 'contact'].map((item) => (
                 <li key={item}>
@@ -45,6 +48,7 @@ const Navbar = ({theme}) => {
                 </li>
               ))}
             </ul>
+
           </motion.div>
         )}
       </div>
