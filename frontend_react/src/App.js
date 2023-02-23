@@ -2,6 +2,7 @@ import React from 'react';
 
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 import { Navbar } from './components';
+import SocialMedia from './components/SocialMedia'
 
 import useLocalStorage from './hooks/useLocalStorage';
 
@@ -17,7 +18,7 @@ const App = () => {
     setTheme(newTheme);
   };
   return (
-    <div className="app" onClick={switchTheme} data-theme={theme}>
+    <div className="app" data-theme={theme}>
       <Navbar theme={theme}/>
       <Header theme={theme}/>
       <About />
@@ -25,6 +26,7 @@ const App = () => {
       <Skills />
       <Testimonial />
       <Footer />
+      <SocialMedia theme={theme} switchTheme={switchTheme}/>
     </div>
   )
 };

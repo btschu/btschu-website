@@ -3,11 +3,13 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import logo from '../../assets/logo.png';
 import logoDark from '../../assets/logo-dark.png';
+import { Spin as Hamburger } from 'hamburger-react'
 import './Navbar.scss';
 
 const Navbar = ({theme}) => {
-
   const [toggle, setToggle] = useState(false);
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <nav className="app__navbar">
 
@@ -29,7 +31,7 @@ const Navbar = ({theme}) => {
           
         <HiMenuAlt4 onClick={() => setToggle(true)} />
           
-        {toggle &&  (
+        {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.5, ease: 'easeOut' }}

@@ -26,7 +26,7 @@ const SocialMedia = ({theme, switchTheme}) => {
         <a href={switchTheme}>
           <button 
             type="switch"
-            // onClick={switchTheme}
+            onClick={switchTheme}
             id="custom-switch"
             variant="sm"
             aria-label={`Toggle ${theme === "dark" ? "light" : "dark"} mode`}
