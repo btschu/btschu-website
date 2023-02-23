@@ -33,13 +33,14 @@ const SocialMedia = ({theme, switchTheme}) => {
             title={`Toggle ${theme === "dark" ? "light" : "dark"} mode`}>
             {theme === "dark" ? <BsFillSunFill /> : <BsMoonStarsFill />}
           </button> 
+          <span>Light/Dark</span>
         </a>
-        <a href="https://github.com/btschu" target="_blank" rel="noreferrer" title="View my GitHub" aria-label="View my GitHub"><button><FaGithub /></button></a>
-        <a href="https://www.linkedin.com/in/brandon-schumacher/" target="_blank" rel="noreferrer" title="View My LinkedIn" aria-label="View My LinkedIn"><button><FaLinkedin /></button></a>
-        <a href="mailto:btschu@icloud.com" title="Email Me" aria-label="Email Me"><button><AiOutlineMail /></button></a>
-        <a href={resume} target="_blank" rel="noreferrer" title="Download My Resume" aria-label="Download My Resume"><button><FaRegFilePdf /></button></a>
+        <a href="https://github.com/btschu" target="_blank" rel="noreferrer" title="View my GitHub" aria-label="View my GitHub"><button><FaGithub /></button><span>Github</span></a>
+        <a href="https://www.linkedin.com/in/brandon-schumacher/" target="_blank" rel="noreferrer" title="View My LinkedIn" aria-label="View My LinkedIn"><button><FaLinkedin /></button><span>LinkedIn</span></a>
+        <a href="mailto:btschu@icloud.com" title="Email Me" aria-label="Email Me"><button><AiOutlineMail /></button><span>Email</span></a>
+        <a href={resume} target="_blank" rel="noreferrer" title="Download My Resume" aria-label="Download My Resume"><button><FaRegFilePdf /></button><span>Resume</span></a>
         {isVisible && (
-        <a href="#home" title="Scroll to top" aria-label="Scroll to top"><button><AiOutlineArrowUp /></button></a>
+        <a href="#home" title="Scroll to top" aria-label="Scroll to top"><button><AiOutlineArrowUp /></button><span>To Top</span></a>
         )}
     </div>
   )
