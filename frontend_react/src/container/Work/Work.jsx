@@ -122,13 +122,11 @@ const Work = () => {
             <div className="app__work-content">
               <h4
                 className="bold-text"
-                style={{  color: "#313bac" }}
               >
                 {works[currentIndex].title}
               </h4>
               <h5
                 className="p-text"
-                style={{ fontSize: 13, color: "#313bac" }}
               >
                 <em>{works[currentIndex].technologies}</em>
               </h5>

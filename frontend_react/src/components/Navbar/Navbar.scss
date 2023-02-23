@@ -4,17 +4,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--primary-color);
+  box-shadow: 2px 2px 15px var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 
   @media screen and (max-width: 600px) {
     padding: .5rem .75rem;
   }
+}
+
+svg {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
 }
 
 .app__navbar-logo {
