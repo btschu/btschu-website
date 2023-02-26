@@ -119,23 +119,29 @@ const Work = () => {
             </div>
           </div>
 
-            <details className="app__work-content">
-              <summary className="bold-text">
+            <div className="app__work-content">
+              <h4 className="bold-text">
                   {works[currentIndex].title}
-              </summary>
+              </h4>
               <h5
                 className="p-text"
               >
                 <em>{works[currentIndex].technologies}</em>
               </h5>
+              <details>
+
+              <summary >
+                Project Description
+              </summary>
               <p className="p-text">
                 {works[currentIndex].description}
               </p>
+              </details>
 
               {/* <div className="app__work-tag app__flex">
                 <p style={{ fontSize: 12 }}>{works[currentIndex].tags}</p>
               </div> */}
-            </details>
+            </div>
           </Carousel>
         )}
       </motion.div>
