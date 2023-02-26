@@ -119,12 +119,10 @@ const Work = () => {
             </div>
           </div>
 
-            <div className="app__work-content">
-              <h4
-                className="bold-text"
-              >
-                {works[currentIndex].title}
-              </h4>
+            <details className="app__work-content">
+              <summary className="bold-text">
+                  {works[currentIndex].title}
+              </summary>
               <h5
                 className="p-text"
               >
@@ -137,7 +135,7 @@ const Work = () => {
               {/* <div className="app__work-tag app__flex">
                 <p style={{ fontSize: 12 }}>{works[currentIndex].tags}</p>
               </div> */}
-            </div>
+            </details>
           </Carousel>
         )}
       </motion.div>
