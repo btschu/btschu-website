@@ -6,7 +6,7 @@ import './Footer.scss';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const { username, email, message } = formData;
@@ -16,7 +16,7 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     setLoading(true);
 
     const contact = {
@@ -29,7 +29,8 @@ const Footer = () => {
     client.create(contact)
       .then(() => {
         setLoading(false);
-        setIsFormSubmitted(true);
+        // alert(`Thank you for the message. I'll be in touch shortly.`)
+        // setIsFormSubmitted(true);
       })
       .catch((err) => console.log(err));
   };
@@ -37,8 +38,8 @@ const Footer = () => {
   return (
     <>
       <h2 className="head-text"><span>Contact</span> Me</h2>
-      {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
+      {/* {!isFormSubmitted ? ( */}
+        <form className="app__footer-form app__flex" action="https://formspree.io/f/mknyegdr" method="post">
           <div className="app__flex">
             <input required className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
@@ -55,15 +56,15 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" aria-label="Send a message to Brandon Schumacher" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
-        </div>
-      ) : (
+          <button type="submit" className="p-text" aria-label="Send a message to Brandon Schumacher" onClick={handleSubmit}>{!loading ? 'Send Message' : `Thank you for the message. I'll be in touch shortly.`}</button>
+        </form>
+      {/* ) : (
         <div>
           <h3 className="head-text thank-you">
             Thank you for getting in touch!
           </h3>
         </div>
-      )}
+      )} */}
     </>
   );
 };
