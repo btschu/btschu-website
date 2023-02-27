@@ -5,8 +5,9 @@
   align-items: center;
   padding: 1rem 2rem;
   background: var(--primary-color);
-  box-shadow: 2px 2px 15px var(--secondary-color);
-  border-bottom: 1px solid var(--secondary-color);
+  filter: opacity(.95);
+  // box-shadow: 2px 2px 15px var(--secondary-color);
+  // border-bottom: 1px solid var(--secondary-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
