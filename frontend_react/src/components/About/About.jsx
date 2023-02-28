@@ -15,16 +15,10 @@ const About = () => {
         <div className="app__about-img">
           <img src={aboutImg} alt="about_img" />
           <p className="p-text app__about-text">
-            Building applications that work seamlessly from end-to-end brings me
-            immense pleasure.. I enjoy the challenge of developing both the
-            front-end user interface and the back-end server logic, and the
-            opportunity to apply my skills across the entire technology stack. I
-            constantly find myself learning new technologies and exploring ways
-            to optimize performance and user experience. Overall, my passion for
-            development fuels my drive to continuously improve and innovate in
-            the field. Apart from coding, I love spending quality time with my
-            family, playing the drums, golfing, and exploring new places through
-            travel.
+            Welcome to my portfolio site! As a full stack developer, I am passionate about crafting exceptional digital experiences that meet the needs of modern businesses and users alike.<br></br><br></br>
+            I pride myself on being a highly detail-oriented individual with a strong problem-solving mindset. I understand that even the smallest details can make a big difference in the final product, and I always strive for excellence in everything I do.<br></br><br></br>
+            Throughout my career, I have honed my skills in various technologies, frameworks, and programming languages to ensure that I can deliver outstanding solutions to my clients. I enjoy taking on complex challenges and finding innovative solutions that exceed expectations.<br></br><br></br>
+            With my extensive knowledge and experience in the field, I am confident that I can create outstanding digital solutions that deliver results. So if you're looking for a skilled and dedicated full stack developer who can bring your ideas to life, then look no further! I am ready to take on your next project and help you achieve your goals.
           </p>
         </div>
       </div>
