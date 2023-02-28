@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
-
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
+
 import "./Work.scss";
 
 const Work = () => {
@@ -137,10 +137,6 @@ const Work = () => {
                 {works[currentIndex].description}
               </p>
               </details>
-
-              {/* <div className="app__work-tag app__flex">
-                <p style={{ fontSize: 12 }}>{works[currentIndex].tags}</p>
-              </div> */}
             </div>
           </Carousel>
         )}

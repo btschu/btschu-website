@@ -1,13 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-// import { AppWrap } from "../../wrapper";
-import "./Header.scss";
+import { motion } from "framer-motion";
 import profileImg from '../../assets/profile.png'
 import profileImgDark from '../../assets/profile-dark.png'
 
-const Header = ({theme}) => {
+import "./Header.scss";
 
+const Header = ({theme}) => {
   return (
     <div className="app__header" id='home'>
       <motion.div
