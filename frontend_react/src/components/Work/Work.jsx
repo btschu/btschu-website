@@ -4,6 +4,7 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Work.scss";
@@ -133,4 +134,8 @@ const Work = () => {
   );
 };
 
-export default Work("app__works", "portfolio", "app__primarybg");
+export default AppWrap(
+  MotionWrap(Work, "app__works"),
+  "portfolio",
+  "app__primarybg"
+);

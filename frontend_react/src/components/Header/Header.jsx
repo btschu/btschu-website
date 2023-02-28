@@ -8,7 +8,7 @@ import "./Header.scss";
 
 const Header = ({ theme }) => {
   return (
-    <div className="app__header">
+    <div className="app__header" id="home">
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -36,4 +36,4 @@ const Header = ({ theme }) => {
   );
 };
 
-export default Header("home");
+export default Header;

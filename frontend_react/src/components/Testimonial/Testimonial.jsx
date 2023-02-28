@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -91,8 +92,8 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial(
-  "app__testimonial",
+export default AppWrap(
+  MotionWrap(Testimonial, "app__testimonial"),
   "testimonials",
   "app__primarybg"
 );

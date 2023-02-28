@@ -1,5 +1,6 @@
 import React from "react";
 
+import { AppWrap, MotionWrap } from "../../wrapper";
 import aboutImg from "../../assets/about.jpeg";
 
 import "./About.scss";
@@ -31,4 +32,8 @@ const About = () => {
   );
 };
 
-export default About("app__about", "about", "app__whitebg");
+export default AppWrap(
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);
