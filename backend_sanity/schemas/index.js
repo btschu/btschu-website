@@ -10,7 +10,6 @@ import works from './works'
  export const schemaTypes = [
      works, 
      testimonials, 
-     brands, 
      abouts, 
      skills, 
      workExperience, 
