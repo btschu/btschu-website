@@ -14,7 +14,7 @@
   --font-color: #030303;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary-color: rgb(47, 47, 47);
   --primary-color2: #e0ebf7;
   --secondary-color: #368df7;

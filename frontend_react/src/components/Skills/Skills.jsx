@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { motion } from 'framer-motion';
-import { Tooltip } from 'react-tooltip'
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
+import { motion } from "framer-motion";
+import { Tooltip } from "react-tooltip";
+import { urlFor, client } from "../../client";
 
-import './Skills.scss';
+import "./Skills.scss";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -26,7 +25,9 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text"><span>Skills</span> & <span>Experiences</span></h2>
+      <h2 className="head-text">
+        <span>Skills</span> & <span>Experiences</span>
+      </h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -49,10 +50,7 @@ const Skills = () => {
         </motion.div>
         <div className="app__skills-exp">
           {experiences.map((experience) => (
-            <motion.div
-              className="app__skills-exp-item"
-              key={experience.year}
-            >
+            <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
@@ -88,8 +86,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg',
-);
+export default Skills("app__skills", "skills", "app__whitebg");

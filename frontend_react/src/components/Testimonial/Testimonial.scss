@@ -24,8 +24,7 @@
     @media screen and (max-width: 850px) {
       width: 100px;
       height: 100px;
-      
-      }
+    }
   }
 
   h4 {
@@ -40,7 +39,7 @@
     margin-top: 5px;
     margin-bottom: 0;
   }
-  
+
   @media screen and (max-width: 850px) {
     width: 100%;
   }
@@ -52,16 +51,15 @@
   padding: 2rem;
 
   @media screen and (max-width: 600px) {
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
   }
 
   p {
-    font-size: .95rem;
+    font-size: 0.95rem;
     line-height: 2rem;
     color: var(--font-color);
     font-family: var(--font-base);
     text-align: justify;
-    
 
     @media screen and (min-width: 2000px) {
       font-size: 2rem;
@@ -69,11 +67,11 @@
     }
 
     @media screen and (max-width: 600px) {
-      font-size: .75rem;
+      font-size: 0.75rem;
       line-height: 1.3rem;
     }
-
-}}
+  }
+}
 
 .app__testimonial-btns {
   flex-direction: row;
@@ -84,36 +82,33 @@
   background-color: var(--white-color);
   align-items: center;
 
-
   margin: 0 1rem;
   transition: all 0.3s ease-in-out;
-  
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+  }
+
+  &:hover {
+    background-color: var(--secondary-color);
 
     svg {
-      width: 20px;
-      height: 20px;
-      color: var(--secondary-color);
-    }
-
-    &:hover {
-      background-color: var(--secondary-color);
-
-      svg {
-        color: var(--white-color);
-      }
-    }
-
-    @media screen and (min-width: 2000px) {
-      width: 100px;
-      height: 100px;
-
-      svg {
-        width: 45px;
-        height: 45px;
-      }
+      color: var(--white-color);
     }
   }
 
+  @media screen and (min-width: 2000px) {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
 
 .app__testimonial-brands {
   width: 80%;

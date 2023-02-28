@@ -4,7 +4,6 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
-import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Work.scss";
@@ -49,9 +48,7 @@ const Work = () => {
               )
             }
           >
-            <div
-              className="app__work-img app__flex"
-            >
+            <div className="app__work-img app__flex">
               <img
                 src={urlFor(works[currentIndex].imgUrl)}
                 alt={works[currentIndex].name}
@@ -94,48 +91,39 @@ const Work = () => {
                 </a>
               </motion.div>
             </div>
-          <div className="app__flex">
-            <div
-              className="app__work-btns"
-              style={{ cursor: "pointer" }}
-              onClick={() =>
-                handleClick(
-                  currentIndex === 0 ? works.length - 1 : currentIndex - 1
-                )
-              }
-            >
-              <HiChevronLeft />
+            <div className="app__flex">
+              <div
+                className="app__work-btns"
+                style={{ cursor: "pointer" }}
+                onClick={() =>
+                  handleClick(
+                    currentIndex === 0 ? works.length - 1 : currentIndex - 1
+                  )
+                }
+              >
+                <HiChevronLeft />
+              </div>
+              <div
+                className="app__work-btns"
+                style={{ cursor: "pointer" }}
+                onClick={() =>
+                  handleClick(
+                    currentIndex === works.length - 1 ? 0 : currentIndex + 1
+                  )
+                }
+              >
+                <HiChevronRight />
+              </div>
             </div>
-            <div
-              className="app__work-btns"
-              style={{ cursor: "pointer" }}
-              onClick={() =>
-                handleClick(
-                  currentIndex === works.length - 1 ? 0 : currentIndex + 1
-                )
-              }
-            >
-              <HiChevronRight />
-            </div>
-          </div>
 
             <div className="app__work-content">
-              <h4 className="bold-text">
-                  {works[currentIndex].title}
-              </h4>
-              <h5
-                className="p-text"
-              >
+              <h4 className="bold-text">{works[currentIndex].title}</h4>
+              <h5 className="p-text">
                 <em>{works[currentIndex].technologies}</em>
               </h5>
               <details>
-
-              <summary >
-                Project Description
-              </summary>
-              <p className="p-text">
-                {works[currentIndex].description}
-              </p>
+                <summary>Project Description</summary>
+                <p className="p-text">{works[currentIndex].description}</p>
               </details>
             </div>
           </Carousel>
@@ -145,8 +133,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Work, "app__works"),
-  "portfolio",
-  "app__primarybg"
-);
+export default Work("app__works", "portfolio", "app__primarybg");

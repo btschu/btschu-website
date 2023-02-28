@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -62,7 +61,6 @@ const Testimonial = () => {
                 src={urlFor(testimonials[currentIndex].imageurl)}
                 alt={testimonials[currentIndex].name}
               />
-              
 
               <div
                 className="app__testimonial-btns app__flex"
@@ -83,8 +81,8 @@ const Testimonial = () => {
           <div className="app__testimonial-content">
             <p className="p-text">{testimonials[currentIndex].feedback}</p>
             <div>
-                <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
-                <h5 className="p-text">{testimonials[currentIndex].company}</h5>
+              <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
+              <h5 className="p-text">{testimonials[currentIndex].company}</h5>
             </div>
           </div>
         </Carousel>
@@ -93,8 +91,8 @@ const Testimonial = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Testimonial, "app__testimonial"),
+export default Testimonial(
+  "app__testimonial",
   "testimonials",
   "app__primarybg"
 );
