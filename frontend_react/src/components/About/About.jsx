@@ -15,10 +15,19 @@ const About = () => {
         <div className="app__about-img">
           <img src={aboutImg} alt="about_img" />
           <p className="p-text app__about-text">
-            Welcome to my portfolio site! As a full stack developer, I am passionate about crafting exceptional digital experiences that meet the needs of modern businesses and users alike.<br></br><br></br>
-            I pride myself on being a highly detail-oriented individual with a strong problem-solving mindset. I understand that even the smallest details can make a big difference in the final product, and I always strive for excellence in everything I do.<br></br><br></br>
-            Throughout my career, I have honed my skills in various technologies, frameworks, and programming languages to ensure that I can deliver outstanding solutions to my clients. I enjoy taking on complex challenges and finding innovative solutions that exceed expectations.<br></br><br></br>
-            With my extensive knowledge and experience in the field, I am confident that I can create outstanding digital solutions that deliver results. So if you're looking for a skilled and dedicated full stack developer who can bring your ideas to life, then look no further! I am ready to take on your next project and help you achieve your goals.
+          
+            Hello, and welcome to my portfolio site! My name is Brandon and I am a full-stack developer. With extensive experience in both front-end and back-end development, I am confident in my ability to take on any project and see it through to completion.<br></br><br></br>
+
+            As a developer, I pride myself on being detail-oriented, always striving to deliver clean, elegant code that is both efficient and maintainable. I have a keen eye for design, and I take great care to ensure that the user experience of every application I build is intuitive and user-friendly.<br></br><br></br>
+
+            One of my greatest strengths is my problem-solving ability. I enjoy tackling complex challenges and finding creative solutions that meet the unique needs of each project. Whether it's debugging a tricky bug or optimizing code for performance, I am always up for a good challenge.<br></br><br></br>
+
+            In addition to my work as a developer, I am a self-motivated individual who is always seeking to learn and grow. I am constantly exploring new technologies and techniques, and I am never satisfied with the status quo. I believe that the key to success in any field is a willingness to adapt and evolve, and I strive to embody this philosophy in everything I do.<br></br><br></br>
+
+            When I'm not coding, I enjoy spending time with my family, playing the drums, golfing, and traveling. These activities help me to recharge my batteries and keep me inspired and motivated.
+
+            Thank you for taking the time to learn a bit about me, and I look forward to the opportunity to work with you on your next project.
+
           </p>
         </div>
       </div>
