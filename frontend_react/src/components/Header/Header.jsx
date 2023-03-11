@@ -11,7 +11,7 @@ const Header = ({ theme }) => {
     <div className="app__header" id="home">
       <motion.div
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
         className="app__header-info"
       >
         <div className="app__header-container">
