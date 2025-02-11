@@ -37,6 +37,12 @@ ol, ul {
 	list-style: none;
 }
 
+#main-wrapper li {
+	margin-left: 40px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -143,13 +149,13 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.25em;
-		margin: 0 0 1.1em 0;
+		margin: 0 0 .5em 0;
 		line-height: 1em;
 	}
 
 	h3 {
 		font-size: 1.35em;
-		margin: 0 0 1em 0;
+		margin: 0 0 .5em 0;
 	}
 
 	b, strong {
