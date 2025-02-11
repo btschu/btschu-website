@@ -97,7 +97,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
-		background-color: #f7f7f7;
+		/* background-color: #f7f7f7; */
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto;
@@ -1914,7 +1914,7 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		padding: 1em 0;
+		padding: 2em 0;
 	}
 
 	#features-wrapper {
@@ -2119,6 +2119,14 @@ input, select, textarea {
 			#banner ul li {
 				padding-left: 0;
 			}
+
+/* card */
+/* .card {
+	background-color: lightgray;
+	padding: 2em;
+	margin: 2em;
+	border-radius: 12px;
+} */
 
 /* Footer */
 
