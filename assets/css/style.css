@@ -649,7 +649,7 @@ h6 {
 # Schedule Section
 --------------------------------------------------------------*/
 #schedule {
-  padding: 60px 0 60px 0;
+  padding: 25px 0 0 0;
 }
 #schedule .nav-tabs {
   text-align: center;
@@ -665,18 +665,20 @@ h6 {
   border: 1px solid black;
   border-radius: 8px;
   font-weight: 600;
-  background-color: #212124;
+  /* background-color: #212124; */
   box-sizing: border-box;
   color: #818181;
   padding: 10px 30px;
+  /* border: 1px solid #212124; */
+
 }
 
 #schedule .nav-tabs a:hover {
   /* background-color: red; */
-  background: #FFD500;
+  /* background: #FFD500;
 background: repeating-linear-gradient(to right, #FF0000 0%, #FFD500 100%);
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; */
   /* color: #fff; */
 }
 @media (max-width: 991px) {
@@ -700,7 +702,7 @@ background: repeating-linear-gradient(to right, #FF0000 0%, #FFD500 100%);
   background: repeating-linear-gradient(to right, #FF0000 0%, #FFD500 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 1px solid #212124;
+  /* border: 1px solid #212124; */
 }
 
 #schedule .tab-pane {
