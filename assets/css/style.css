@@ -667,11 +667,17 @@ h6 {
   font-weight: 600;
   /* background-color: #212124; */
   box-sizing: border-box;
-  color: #818181;
+  color: #616161;
   padding: 10px 30px;
   /* border: 1px solid #212124; */
 
 }
+
+#schedule .nav-tabs a span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 
 #schedule .nav-tabs a:hover {
   /* background-color: red; */
