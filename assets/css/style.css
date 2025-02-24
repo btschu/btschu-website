@@ -73,11 +73,12 @@ h6 {
 #schedule .nav-tabs a span {
   font-size: 15px;
   font-weight: 400;
+  
 }
 
 @media (max-width: 991px) {
   #schedule .nav-tabs a {
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     font-size: 8;
   }
   #schedule .nav-tabs a span {
