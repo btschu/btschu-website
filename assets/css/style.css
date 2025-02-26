@@ -125,7 +125,7 @@ h6 {
 } */
 
 .row ul li {
-  font-style: italic;
+  /* font-style: italic; */
   margin-left: 15px;
   color: #000;
   font-size: 25px;
