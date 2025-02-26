@@ -70,6 +70,11 @@ h6 {
 
 }
 
+#schedule .nav-tabs a:hover {
+  box-shadow:  15px 15px 20px #c3c3c3,
+              -5px -5px 10px #fdfdfd;
+}
+
 #schedule .nav-tabs a span {
   font-size: 15px;
   font-weight: 400;
@@ -103,6 +108,7 @@ h6 {
   transition: ease-in-out 0.2s;
 }
 
+
 #schedule .schedule-item {
   border-radius: 8px;
   background: #e0e0e0;
@@ -112,6 +118,11 @@ h6 {
   padding: 20px;
   transition: background-color ease-in-out 0.3s;
 }
+
+/* #schedule .schedule-item:hover {
+  box-shadow: inset 5px 5px 10px #c3c3c3,
+              inset -5px -5px 10px #fdfdfd;
+} */
 
 .row ul li {
   font-style: italic;
