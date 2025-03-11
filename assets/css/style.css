@@ -96,7 +96,7 @@ body {
   background: var(--color-card);
   /* box-shadow:  5px 5px 10px #c3c3c3,
               -5px -5px 10px #fdfdfd; */
-  margin: 20px;
+  margin: 5px;
   padding: 20px;
   color: var(--color-white-text);
 }
