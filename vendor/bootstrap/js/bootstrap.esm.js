@@ -4852,7 +4852,7 @@ class Toast extends BaseComponent {
 
       EventHandler.trigger(this._element, EVENT_SHOWN);
 
-      this._maybeScheduleHide();
+      this._maybecardHide();
     };
 
     this._element.classList.remove(CLASS_NAME_HIDE); // @deprecated
@@ -4914,7 +4914,7 @@ class Toast extends BaseComponent {
     return config;
   }
 
-  _maybeScheduleHide() {
+  _maybecardHide() {
     if (!this._config.autohide) {
       return;
     }
@@ -4953,7 +4953,7 @@ class Toast extends BaseComponent {
       return;
     }
 
-    this._maybeScheduleHide();
+    this._maybecardHide();
   }
 
   _setListeners() {

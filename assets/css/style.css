@@ -1,275 +1,142 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html {
-  padding: env(safe-area-inset)
+
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Work Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-black-text: #000;
+  --color-white-text: #fff;
+  --color-blue-text: #004e92;
+  --color-background: #f0f0f0;
+  --color-card: #004e92;
+  --color-primary: red;
+  --color-learning-target: #1D2671;
+  --color-agenda: #4CA1AF;
+  --color-upcoming-events: #004e92;
+  --color-homework: #2C3E50;
 }
 
 body {
-  background: #e0e0e0;
-  color: black;
-  font-family: "Varela Round", "Open Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Varela Round", "Raleway", sans-serif;
-  font-weight: 400;
-  margin: 5px 0;
-  padding: 0;
-  color: #fff;
-}
-
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
-}
-
-.section-with-bg {
-  background-color: #e0e0e0;
-}
-
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
-#schedule {
-  padding: 25px 0 0 0;
-}
-
-#schedule .nav-tabs {
-  text-align: center;
-  margin: auto;
-  display: block;
-  border-bottom: 0;
-}
-
-#schedule .nav-tabs li {
-  display: inline-block;
-  margin: 20px;
-}
-
-#schedule .nav-tabs a {
-  border-radius: 8px;
-  background: #e0e0e0;
-  box-shadow:  5px 5px 10px #c3c3c3,
-              -5px -5px 10px #fdfdfd;
-  font-weight: 600;
-  color: #000;
-  padding: 10px 30px;
-
-}
-
-#schedule .nav-tabs a:hover {
-  box-shadow:  15px 15px 20px #c3c3c3,
-              -5px -5px 10px #fdfdfd;
-}
-
-#schedule .nav-tabs a span {
-  font-size: 15px;
-  font-weight: 400;
-  
+  background-color: var(--color-background);
 }
 
 .container {
   min-width: 100vw;
 }
 
+/*--------------------------------------------------------------
+# nav Section
+--------------------------------------------------------------*/
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border: none;;
+}
+
+.nav-tabs li {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.nav-tabs a {
+  font-weight: 600;
+  color: var(--color-black-text);
+}
+
+.nav-tabs a:hover {
+  border: none;
+  color: var(--color-blue-text);
+  background: var(--color-background);
+  /* box-shadow: inset 5px 5px 10px #c3c3c3,
+              inset -5px -5px 10px #fdfdfd; */
+}
+
+.nav-tabs a span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  text-decoration: underline;
+  color: var(--color-blue-text);
+  border: none;
+  background: var(--color-background);
+  /* box-shadow: inset 5px 5px 10px #c3c3c3,
+              inset -5px -5px 10px #fdfdfd; */
+}
+
 @media (max-width: 991px) {
-  #schedule .nav-tabs a {
+  .nav-tabs a {
     padding: 5px 5px 0 5px;
     font-size: 8;
   }
-  #schedule .nav-tabs a span {
+  .nav-tabs a span {
     font-size: 12px;
   }
-  #schedule .nav-tabs li {
+  .nav-tabs li {
     margin: 15px 5px;
   }
-  .container {
-    min-width: 100vw;
-  }
-}
-
-#schedule .nav-tabs a.active {
-  border-radius: 8px;
-  background: #e0e0e0;
-  box-shadow: inset 5px 5px 10px #c3c3c3,
-              inset -5px -5px 10px #fdfdfd;
-}
-
-#schedule .tab-pane {
-  transition: ease-in-out 0.2s;
-}
-
-
-#schedule .schedule-item {
-  border-radius: 8px;
-  background: #e0e0e0;
-  box-shadow:  5px 5px 10px #c3c3c3,
-              -5px -5px 10px #fdfdfd;
-  margin: 20px;
-  padding: 20px;
-  transition: background-color ease-in-out 0.3s;
-}
-
-/* #schedule .schedule-item:hover {
-  box-shadow: inset 5px 5px 10px #c3c3c3,
-              inset -5px -5px 10px #fdfdfd;
-} */
-
-.row ul li {
-  /* font-style: italic; */
-  margin-left: 15px;
-  color: #000;
-  font-size: 25px;
-}
-
-#schedule .schedule-item h4 {
-  font-size: 40px;
-  font-weight: 600;
-  margin: 5px 0;
-  color: #000;
-}
-
-#schedule .schedule-item h2 {
-  color: #000;
-  text-decoration: underline;
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
-# Footer
+# card Section
 --------------------------------------------------------------*/
-#footer {
-  background: black;
-  color: #eee;
-  font-size: 14px;
-}
-#footer .footer-top {
-  background: black;
-  padding: 60px 0 30px 0;
-}
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-info h3 {
-  font-size: 26px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-family: "Varela Round", "Raleway", sans-serif;
-  font-weight: 700;
-  color: #fff;
-}
-#footer .footer-top .footer-info img {
-  height: 40px;
-  margin-bottom: 10px;
-}
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Varela Round", "Raleway", sans-serif;
-  color: #fff;
-}
-#footer .footer-top .social-links a {
-  display: inline-block;
-  background: #222636;
-  color: #eee;
-  line-height: 1;
-  margin-right: 4px;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-#footer .footer-top .social-links a i {
-  line-height: 0;
-  font-size: 16px;
-}
-#footer .footer-top .social-links a:hover {
-  background: red;
-  color: #fff;
-}
-#footer .footer-top h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
-}
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#footer .footer-top .footer-links ul i {
-  padding-right: 5px;
-  color: red;
-  font-size: 18px;
-}
-#footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #262c44;
-  padding: 10px 0;
-}
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-#footer .footer-top .footer-links ul a {
-  color: #eee;
-}
-#footer .footer-top .footer-links ul a:hover {
-  color: red;
-}
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-#footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-newsletter input[type="email"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-}
-#footer .footer-top .footer-newsletter input[type="submit"] {
-  background: red;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: red;
+
+.card {
+  border-radius: 14px;
+  border: none;
+  background: var(--color-card);
+  /* box-shadow:  5px 5px 10px #c3c3c3,
+              -5px -5px 10px #fdfdfd; */
+  margin: 20px;
+  padding: 20px;
+  color: var(--color-white-text);
 }
 
-#expectations {
-  padding-bottom: 2rem;
+.row ul li {
+  margin-left: 15px;
+  font-size: 25px;
 }
 
+.card h4 {
+  font-size: 40px;
+  font-weight: 600;
+}
 
+.card h2 {
+  text-decoration: underline;
+}
+
+/* .learning-target {
+  color: var(--color-white-text);
+  background: var(--color-learning-target);
+} */
+
+/* .agenda {
+  color: var(--color-white-text);
+  background: var(--color-agenda);
+} */
+
+/* .upcoming-events {
+  color: var(--color-white-text);
+  background: var(--color-upcoming-events);
+} */
+
+/* .homework {
+  color: var(--color-white-text);
+  background: var(--color-homework);
+} */
+
+@media (max-width: 991px) {
+  .card {
+    margin: 10px;
+  }
+}
