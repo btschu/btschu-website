@@ -4,7 +4,9 @@
 
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
@@ -14,13 +16,13 @@
   --color-black-text: #000;
   --color-white-text: #fff;
   --color-blue-text: #004e92;
-  --color-background: #f0f0f0;
+  --color-background: #0686f5;
   --color-card: #004e92;
   --color-primary: red;
-  --color-learning-target: #1D2671;
-  --color-agenda: #4CA1AF;
+  --color-learning-target: #1d2671;
+  --color-agenda: #4ca1af;
   --color-upcoming-events: #004e92;
-  --color-homework: #2C3E50;
+  --color-homework: #2c3e50;
 }
 
 body {
@@ -38,7 +40,7 @@ body {
 .nav-tabs {
   display: flex;
   justify-content: center;
-  border: none;;
+  border: none;
 }
 
 .nav-tabs li {
@@ -48,12 +50,12 @@ body {
 
 .nav-tabs a {
   font-weight: 600;
-  color: var(--color-black-text);
+  color: var(--color-white-text);
 }
 
 .nav-tabs a:hover {
   border: none;
-  color: var(--color-blue-text);
+  color: var(--color-black-text);
   background: var(--color-background);
   /* box-shadow: inset 5px 5px 10px #c3c3c3,
               inset -5px -5px 10px #fdfdfd; */
@@ -64,9 +66,10 @@ body {
   font-weight: 400;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  text-decoration: underline;
-  color: var(--color-blue-text);
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  /* text-decoration: underline; */
+  color: var(--color-black-text);
   border: none;
   background: var(--color-background);
   /* box-shadow: inset 5px 5px 10px #c3c3c3,
@@ -91,14 +94,19 @@ body {
 --------------------------------------------------------------*/
 
 .card {
-  border-radius: 14px;
-  border: none;
-  background: var(--color-card);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* background: var(--color-card); */
   /* box-shadow:  5px 5px 10px #c3c3c3,
               -5px -5px 10px #fdfdfd; */
   margin: 5px;
   padding: 20px;
-  color: var(--color-white-text);
+  color: var(--color-black-text);
 }
 
 .row ul li {
