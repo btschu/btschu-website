@@ -12,11 +12,9 @@
 /* Colors */
 :root {
   --color-black-text: #000;
-  --color-white-text: #fff;
-  --color-blue-text: #004e92;
-  --color-background: #f0f0f0;
+  --color-white-text: whitesmoke;
+  --color-background: #1f1f47;
   --color-card: #004e92;
-  --color-primary: red;
   --color-learning-target: #1D2671;
   --color-agenda: #4CA1AF;
   --color-upcoming-events: #004e92;
@@ -35,55 +33,76 @@ body {
 # nav Section
 --------------------------------------------------------------*/
 
-.nav-tabs {
+.my-nav-tabs {
   display: flex;
   justify-content: center;
-  border: none;;
+  border: none;
+  padding-bottom: 10px;
 }
 
-.nav-tabs li {
+.my-nav-tabs li {
   margin: 10px 0 0 0;
   text-align: center;
 }
 
-.nav-tabs a {
+.my-nav-tabs a {
   font-weight: 600;
-  color: var(--color-black-text);
+  color: var(--color-white-text);
 }
 
-.nav-tabs a:hover {
+.my-nav-tabs a:hover {
   border: none;
-  color: var(--color-blue-text);
-  background: var(--color-background);
-  /* box-shadow: inset 5px 5px 10px #c3c3c3,
-              inset -5px -5px 10px #fdfdfd; */
+  transform: scale(1.1);
+  color: var(--color-white-text);
 }
 
-.nav-tabs a span {
+.my-nav-tabs a span {
   font-size: 15px;
   font-weight: 400;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+/* .my-nav-tabs .nav-item.show .nav-link, .nav-link.active {
+  color: var(--color-white-text);
+  border-radius: 14px;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
+} */
+
+.my-nav-tabs .nav-item.show .nav-link, .nav-link.active:hover {
+  cursor: default;
+  transform: none;
+}
+
+.my-nav-tabs .nav-item.show .nav-link, .nav-link.active span {
   text-decoration: underline;
-  color: var(--color-blue-text);
-  border: none;
-  background: var(--color-background);
-  /* box-shadow: inset 5px 5px 10px #c3c3c3,
-              inset -5px -5px 10px #fdfdfd; */
+  text-decoration-thickness: 5px;
+  text-decoration-color: red;
+  text-underline-offset: 8px;
 }
 
 @media (max-width: 991px) {
-  .nav-tabs a {
-    padding: 5px 5px 0 5px;
-    font-size: 8;
+  .my-nav-tabs {
+    padding-bottom: 0;
   }
-  .nav-tabs a span {
-    font-size: 12px;
+  .my-nav-tabs a {
+    padding: 5px;
+    font-size: 10px;
   }
-  .nav-tabs li {
-    margin: 15px 5px;
+  .my-nav-tabs a span {
+    font-size: 10px;
   }
+  .my-nav-tabs li {
+    margin: 15px 0;
+  }
+  /* .my-nav-tabs .nav-item.show .nav-link, .nav-link.active {
+    background: none;
+    border: none;
+    text-decoration: underline;
+  } */
 }
 
 /*--------------------------------------------------------------
@@ -91,29 +110,44 @@ body {
 --------------------------------------------------------------*/
 
 .card {
-  border-radius: 14px;
-  border: none;
-  background: var(--color-card);
-  /* box-shadow:  5px 5px 10px #c3c3c3,
-              -5px -5px 10px #fdfdfd; */
+  background: rgba( 255, 255, 255, 0.15 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
   margin: 5px;
   padding: 20px;
   color: var(--color-white-text);
 }
 
 .row ul li {
-  margin-left: 15px;
+  margin-left: 25px;
   font-size: 25px;
+  /* list-style: none; */
 }
+
+/* .row ul li::before {
+  content: "🎺 ";
+} */
 
 .card h4 {
   font-size: 40px;
   font-weight: 600;
+  /* text-decoration: underline; */
+  /* text-align: center; */
 }
 
-.card h2 {
-  text-decoration: underline;
+/* .card h4::before {
+  content: "🎷 ";
 }
+
+.card h4::after {
+  content: " 🎺";
+} */
+
+/* .card h2 {
+  text-decoration: underline;
+} */
 
 /* .learning-target {
   color: var(--color-white-text);
